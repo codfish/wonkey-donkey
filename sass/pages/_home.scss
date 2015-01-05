@@ -1,104 +1,116 @@
 .introduction-container {
   @media (min-width: $screen-lg-min) {
-    width: $screen-lg-min - 1;
+    width: $screen-lg-min;
   }
-}
 
-.introduction-row {
-  // wonkey donkey left column picture
-  .picture {
-    display: table-cell;
-    float: none;
-    margin: 0 (-$gutter / 2);
-    max-height: 567px;
-    vertical-align: top;
-
-    @media (min-width: $screen-sm-min) {
-      padding: 0;
-    }
-
-    img {
+  .introduction-row {
+    // wonkey donkey left column picture
+    .picture {
       max-height: 567px;
-      width: 100%;
-    }
-  }
+      padding-left: 0;
+      padding-right: 0;
 
-  .intro {
-    background-color: $brand-primary;
-    color: #fff;
-    display: table-cell;
-    float: none;
-    font-size: 1.625em;
-    padding-top: $gutter;
-    padding-bottom: $gutter;
-    text-align: center;
-    vertical-align: top;
+      @media (min-width: $screen-md-min) {
+        padding: 0;
+      }
 
-    @media (min-width: $screen-sm-min) {
-      padding: $gutter * 2;
+      img {
+        max-height: 567px;
+        width: 100%;
+      }
     }
 
-    .title {
-      color: #000;
-      margin: 0 0 $gutter;
-      text-transform: uppercase;
+    .intro {
+      background-color: $brand-primary;
+      color: #fff;
+      font-size: 1.625rem;
+      padding-top: $gutter;
+      padding-bottom: $gutter;
+      position: relative;
+      text-align: center;
+
+      @media (min-width: $screen-sm-min) {
+        font-size: 1.225rem;
+      }
+
+      @media (min-width: $screen-md-min) {
+        font-size: 1.425rem;
+        padding: $gutter * 1.5;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 1.625rem;
+        padding: $gutter * 2;
+      }
+
+      .title {
+        color: #000;
+        font-weight: 700;
+        margin: 0 0 $gutter;
+        text-transform: uppercase;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          margin-bottom: $gutter / 2;
+        }
+      }
+
+      p {
+        margin: 0 0 $gutter;
+      }
+
+      .arrow {
+        background: url('#{$img-path}/arrow.png') 0 0 no-repeat;
+        bottom: -65px;
+        display: block;
+        left: 50%;
+        position: absolute;
+        height: 66px;
+        width: 155px;
+        @include translate(-50%, 0);
+      }
     }
 
-    p {
-      margin: 0 0 $gutter;
-    }
-
-    .arrow {
-      background: url('#{$img-path}/arrow.png') 0 0 no-repeat;
-      bottom: -65px;
-      display: block;
-      left: 50%;
-      position: absolute;
-      height: 66px;
-      width: 155px;
-      @include translate(-50%, 0);
-    }
-  }
-
-  .social-connect {
-    margin: 0 auto;
-    padding: 0;
-
-    li {
-      display: inline-block;
-      margin-left: ($gutter / 2);
+    .social-connect {
+      margin: 0 auto;
       padding: 0;
 
-      &:first-child {
-        margin-left: 0;
+      li {
+        display: inline-block;
+        margin-left: ($gutter / 2);
+        padding: 0;
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
     }
   }
 }
+
 
 .signup-container {
   background-color: #efefef;
 
   @media (min-width: $screen-lg-min) {
     margin: 0 auto;
-    width: $screen-lg-min - 1;
+    width: $screen-lg-min;
   }
 
   .signup-row {
     .instructions {
-      padding: 0 $gutter ($gutter / 2);
+      padding: 0 $gutter $gutter;
 
       @media (min-width: $screen-sm-min) {
         padding-top: $gutter;
       }
 
       .title {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-weight: 700;
-        margin: (66px + 15) 0 1.5em; // arrow height + 15px
+        margin: (66px + 15) 0 1.5rem; // arrow height + 15px
 
         @media (min-width: $screen-sm-min) {
-          margin-top: .8em;
+          margin-top: .8rem;
         }
       }
     }
@@ -107,7 +119,12 @@
       padding-bottom: $gutter;
 
       @media (min-width: $screen-sm-min) {
-        padding: (66px + 20px) ($gutter * 4) 3.125em; // arrow height + 20px
+        padding: (66px + 20px) 3.125rem 3.125rem; // arrow height + 20px
+
+        form {
+          margin: 0 auto;
+          max-width: 360px;
+        }
       }
 
       label {
@@ -120,7 +137,7 @@
         color: white;
         display: block;
         font-family: $font-form-inputs;
-        font-size: .75em;
+        font-size: .75rem;
         font-weight: 400;
         height: 36px;
         line-height: 1.42857;

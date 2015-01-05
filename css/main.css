@@ -5377,6 +5377,9 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+html {
+  font-size: 16px; }
+
 .form-control {
   background: #666;
   border: none;
@@ -5390,7 +5393,7 @@ p + p {
 /**
  * Header & Navigation
  */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .header {
     margin: 0 auto;
     width: 1200px; } }
@@ -5431,40 +5434,47 @@ p + p {
 
 @media (min-width: 1200px) {
   .introduction-container {
-    width: 1199px; } }
-
-.introduction-row .picture {
-  display: table-cell;
-  float: none;
-  margin: 0 -15px;
+    width: 1200px; } }
+.introduction-container .introduction-row .picture {
   max-height: 567px;
-  vertical-align: top; }
-  @media (min-width: 768px) {
-    .introduction-row .picture {
+  padding-left: 0;
+  padding-right: 0; }
+  @media (min-width: 992px) {
+    .introduction-container .introduction-row .picture {
       padding: 0; } }
-  .introduction-row .picture img {
+  .introduction-container .introduction-row .picture img {
     max-height: 567px;
     width: 100%; }
-.introduction-row .intro {
+.introduction-container .introduction-row .intro {
   background-color: #009d1b;
   color: #fff;
-  display: table-cell;
-  float: none;
-  font-size: 1.625em;
+  font-size: 1.625rem;
   padding-top: 30px;
   padding-bottom: 30px;
-  text-align: center;
-  vertical-align: top; }
+  position: relative;
+  text-align: center; }
   @media (min-width: 768px) {
-    .introduction-row .intro {
+    .introduction-container .introduction-row .intro {
+      font-size: 1.225rem; } }
+  @media (min-width: 992px) {
+    .introduction-container .introduction-row .intro {
+      font-size: 1.425rem;
+      padding: 45px; } }
+  @media (min-width: 1200px) {
+    .introduction-container .introduction-row .intro {
+      font-size: 1.625rem;
       padding: 60px; } }
-  .introduction-row .intro .title {
+  .introduction-container .introduction-row .intro .title {
     color: #000;
+    font-weight: 700;
     margin: 0 0 30px;
     text-transform: uppercase; }
-  .introduction-row .intro p {
+    @media (min-width: 768px) and (max-width: 992px) {
+      .introduction-container .introduction-row .intro .title {
+        margin-bottom: 15px; } }
+  .introduction-container .introduction-row .intro p {
     margin: 0 0 30px; }
-  .introduction-row .intro .arrow {
+  .introduction-container .introduction-row .intro .arrow {
     background: url("../img/arrow.png") 0 0 no-repeat;
     bottom: -65px;
     display: block;
@@ -5476,14 +5486,14 @@ p + p {
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0); }
-.introduction-row .social-connect {
+.introduction-container .introduction-row .social-connect {
   margin: 0 auto;
   padding: 0; }
-  .introduction-row .social-connect li {
+  .introduction-container .introduction-row .social-connect li {
     display: inline-block;
     margin-left: 15px;
     padding: 0; }
-    .introduction-row .social-connect li:first-child {
+    .introduction-container .introduction-row .social-connect li:first-child {
       margin-left: 0; }
 
 .signup-container {
@@ -5491,24 +5501,27 @@ p + p {
   @media (min-width: 1200px) {
     .signup-container {
       margin: 0 auto;
-      width: 1199px; } }
+      width: 1200px; } }
   .signup-container .signup-row .instructions {
-    padding: 0 30px 15px; }
+    padding: 0 30px 30px; }
     @media (min-width: 768px) {
       .signup-container .signup-row .instructions {
         padding-top: 30px; } }
     .signup-container .signup-row .instructions .title {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       font-weight: 700;
-      margin: 81px 0 1.5em; }
+      margin: 81px 0 1.5rem; }
       @media (min-width: 768px) {
         .signup-container .signup-row .instructions .title {
-          margin-top: .8em; } }
+          margin-top: .8rem; } }
   .signup-container .signup-row .form {
     padding-bottom: 30px; }
     @media (min-width: 768px) {
       .signup-container .signup-row .form {
-        padding: 86px 120px 3.125em; } }
+        padding: 86px 3.125rem 3.125rem; }
+        .signup-container .signup-row .form form {
+          margin: 0 auto;
+          max-width: 360px; } }
     .signup-container .signup-row .form label {
       display: none; }
     .signup-container .signup-row .form .submit {
@@ -5517,7 +5530,7 @@ p + p {
       color: white;
       display: block;
       font-family: tahoma, helvetica, arial, sans-serif;
-      font-size: .75em;
+      font-size: .75rem;
       font-weight: 400;
       height: 36px;
       line-height: 1.42857;

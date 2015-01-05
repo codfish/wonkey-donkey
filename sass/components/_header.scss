@@ -2,7 +2,7 @@
  * Header & Navigation
  */
 .header {
-  @media (min-width: $screen-sm-min) {
+  @media (min-width: $screen-lg-min) {
     margin: 0 auto;
     width: $screen-lg-min;
   }
