@@ -5436,14 +5436,12 @@ p + p {
   .introduction-container {
     width: 1200px; } }
 .introduction-container .introduction-row .picture {
-  max-height: 567px;
   padding-left: 0;
   padding-right: 0; }
   @media (min-width: 992px) {
     .introduction-container .introduction-row .picture {
       padding: 0; } }
   .introduction-container .introduction-row .picture img {
-    max-height: 567px;
     width: 100%; }
 .introduction-container .introduction-row .intro {
   background-color: #009d1b;
