@@ -5470,8 +5470,14 @@ p + p {
     @media (min-width: 768px) and (max-width: 992px) {
       .introduction-container .introduction-row .intro .title {
         margin-bottom: 15px; } }
+    @media (min-width: 1200px) {
+      .introduction-container .introduction-row .intro .title {
+        margin-bottom: 45px; } }
   .introduction-container .introduction-row .intro p {
     margin: 0 0 30px; }
+    @media (min-width: 1200px) {
+      .introduction-container .introduction-row .intro p {
+        margin-bottom: 45px; } }
   .introduction-container .introduction-row .intro .arrow {
     background: url("../img/arrow.png") 0 0 no-repeat;
     bottom: -65px;
@@ -5489,7 +5495,7 @@ p + p {
   padding: 0; }
   .introduction-container .introduction-row .social-connect li {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 30px;
     padding: 0; }
     .introduction-container .introduction-row .social-connect li:first-child {
       margin-left: 0; }
