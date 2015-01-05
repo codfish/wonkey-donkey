@@ -1,0 +1,22 @@
+{
+  "name": "cod-wonkey-donkey",
+  "version": "0.1.0",
+  "description": "A true lifestyle brand that will let you be comfortable everywhere—living your own Lifestyle of Sophomoric Sophistication.",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/codonnell822/cod-wonkey-donkey"
+  },
+  "author": "chris@codfi.sh",
+  "license": "MIT"
+}

@@ -1,0 +1,134 @@
+.introduction-container {
+  @media (min-width: $screen-lg-min) {
+    width: $screen-lg-min - 1;
+  }
+}
+
+.introduction-row {
+  // wonkey donkey left column picture
+  .picture {
+    display: table-cell;
+    float: none;
+    margin: 0 (-$gutter / 2);
+    max-height: 567px;
+    vertical-align: top;
+
+    @media (min-width: $screen-sm-min) {
+      padding: 0;
+    }
+
+    img {
+      max-height: 567px;
+      width: 100%;
+    }
+  }
+
+  .intro {
+    background-color: $brand-primary;
+    color: #fff;
+    display: table-cell;
+    float: none;
+    font-size: 1.625em;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+    text-align: center;
+    vertical-align: top;
+
+    @media (min-width: $screen-sm-min) {
+      padding: $gutter * 2;
+    }
+
+    .title {
+      color: #000;
+      margin: 0 0 $gutter;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0 0 $gutter;
+    }
+
+    .arrow {
+      background: url('#{$img-path}/arrow.png') 0 0 no-repeat;
+      bottom: -65px;
+      display: block;
+      left: 50%;
+      position: absolute;
+      height: 66px;
+      width: 155px;
+      @include translate(-50%, 0);
+    }
+  }
+
+  .social-connect {
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-left: ($gutter / 2);
+      padding: 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.signup-container {
+  background-color: #efefef;
+
+  @media (min-width: $screen-lg-min) {
+    margin: 0 auto;
+    width: $screen-lg-min - 1;
+  }
+
+  .signup-row {
+    .instructions {
+      padding: 0 $gutter ($gutter / 2);
+
+      @media (min-width: $screen-sm-min) {
+        padding-top: $gutter;
+      }
+
+      .title {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: (66px + 15) 0 1.5em; // arrow height + 15px
+
+        @media (min-width: $screen-sm-min) {
+          margin-top: .8em;
+        }
+      }
+    }
+
+    .form {
+      padding-bottom: $gutter;
+
+      @media (min-width: $screen-sm-min) {
+        padding: (66px + 20px) ($gutter * 4) 3.125em; // arrow height + 20px
+      }
+
+      label {
+        display: none;
+      }
+
+      .submit {
+        background-color: $brand-primary;
+        border: none;
+        color: white;
+        display: block;
+        font-family: $font-form-inputs;
+        font-size: .75em;
+        font-weight: 400;
+        height: 36px;
+        line-height: 1.42857;
+        padding: 6px 12px;
+        text-align: left;
+        text-transform: uppercase;
+        width: 100%;
+      }
+    }
+  }
+}

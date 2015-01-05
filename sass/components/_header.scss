@@ -1,0 +1,39 @@
+/**
+ * Header & Navigation
+ */
+.header {
+  @media (min-width: $screen-sm-min) {
+    margin: 0 auto;
+    width: $screen-lg-min;
+  }
+}
+
+.navbar {
+  margin-bottom: .5em;
+  padding-top: .5em;
+
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .nav {
+    display: none;
+
+    &.navbar-right {
+      margin-right: 0;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+
+    a {
+      color: #666;
+      font-weight: 300;
+
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+}

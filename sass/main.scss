@@ -1,0 +1,27 @@
+/**
+ * Main stylesheet.
+ *
+ * - Set variables & overwrite bootstrap defualts
+ * - Import bootstrap
+ * - Import utility stylesheets
+ * - Import all partial stylesheets
+ */
+
+// bootstrap overwrites
+@import "util/bootstrap-overwrites";
+
+// import bootstrap
+@import "../js/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap";
+
+// custom variables
+@import "util/variables";
+
+// utilities
+@import "util/global";
+
+// components
+@import "components/header";
+@import "components/footer";
+
+// pages
+@import "pages/home";

@@ -1,0 +1,11 @@
+.form-control {
+  background: #666;
+  border: none;
+  color: #fff;
+  font-family: $font-form-inputs;
+  font-size: .75em;
+}
+
+p + p {
+  margin: 1.5em 0 0;
+}

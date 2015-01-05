@@ -1,0 +1,23 @@
+{
+  "name": "cod-wonkey-donkey",
+  "version": "0.1.0",
+  "authors": [
+    "chris@codfi.sh"
+  ],
+  "description": "A true lifestyle brand that will let you be comfortable everywhere—living your own Lifestyle of Sophomoric Sophistication.",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "js/vendor",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.1",
+    "jquery": "~2.1.3",
+    "modernizr": "~2.8.3"
+  }
+}

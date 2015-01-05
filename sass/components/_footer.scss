@@ -1,0 +1,19 @@
+.footer {
+  background-color: #fff;
+  border-bottom: 3px solid $brand-primary;
+  padding-top: .75em;
+  padding-bottom: .75em;
+
+  .copyright {
+    color: #666;
+    font-size: .75em;
+    margin: 0;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-lg-min) {
+      margin: 0 auto;
+      padding: 0 ($gutter / 2);
+      width: $screen-lg-min;
+    }
+  }
+}
