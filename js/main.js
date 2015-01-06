@@ -1,7 +1,7 @@
 ;(function(window, document, $, undefined) {
-  var screenSmMin       = 768,
-      donkeyPicSelector = '.introduction-row .picture img',
-      introSelector     = '.introduction-row .intro';
+  var screenSmMin  = 768,
+      donkeyPicCol = '.introduction-row .picture',
+      introCol     = '.introduction-row .intro';
 
   /**
    * Update introduction column height
@@ -11,11 +11,11 @@
    */
   var updateIntroHeight = function() {
     if (window.innerWidth > screenSmMin) {
-      $(introSelector).css({
-        'height': $(donkeyPicSelector).outerHeight(true) + 'px'
+      $(introCol).css({
+        'height': $(donkeyPicCol + ' img').outerHeight(true) + 'px'
       });
     } else {
-      $(introSelector).css({
+      $(introCol).css({
         'height': 'auto'
       });
     }
@@ -24,5 +24,10 @@
   $(window).on('load', function() {
     updateIntroHeight();
     $(window).on('resize orientationchange', $.debounce(200, updateIntroHeight));
+
+    // table-cell class given to intro & donkey pic columns
+    // in order to try and minimize jankyness on load. But once
+    // the heights are set with JS, this class can be removed.
+    $(introCol + ', ' + donkeyPicCol).removeClass('table-cell');
   });
 }(window, document, jQuery));
