@@ -28,11 +28,11 @@
       text-align: center;
 
       @media (min-width: $screen-sm-min) {
-        font-size: 1.225rem;
+        font-size: 1.05rem;
       }
 
       @media (min-width: $screen-md-min) {
-        font-size: 1.425rem;
+        font-size: 1.4rem;
         padding: $gutter * 1.5;
       }
 
@@ -42,8 +42,31 @@
       }
 
       .title {
-        color: #000;
+        color: #333;
+        font-size: 1.625rem;
+        margin: 0;
+      }
+
+      .introducing {
+        display: block;
+        font-family: Pacifico, Helvetica, Arial, sans-serif;
+        font-size: 1.375rem;
+        margin: 0 0 $gutter;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          margin-bottom: $gutter / 2;
+        }
+
+        @media (min-width: $screen-lg-min) {
+          font-size: 1.875rem;
+          margin-bottom: $gutter * 1.5;
+        }
+      }
+
+      .company-name {
+        font-family: "Cantata One", Serif, Times, serif;
         font-weight: 700;
+        display: block;
         margin: 0 0 $gutter;
         text-transform: uppercase;
 
@@ -52,12 +75,21 @@
         }
 
         @media (min-width: $screen-lg-min) {
+          font-size: 2rem;
           margin-bottom: $gutter * 1.5;
+        }
+
+        .reg {
+          vertical-align: middle;
         }
       }
 
       p {
         margin: 0 0 $gutter;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          margin-bottom: $gutter / 2;
+        }
 
         @media (min-width: $screen-lg-min) {
           margin-bottom: $gutter * 1.5;

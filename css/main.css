@@ -5377,7 +5377,8 @@ button.close {
   .hidden-print {
     display: none !important; } }
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.4; }
 
 .form-control {
   background: #666;
@@ -5457,28 +5458,51 @@ p + p {
   text-align: center; }
   @media (min-width: 768px) {
     .introduction-container .introduction-row .intro {
-      font-size: 1.225rem; } }
+      font-size: 1.05rem; } }
   @media (min-width: 992px) {
     .introduction-container .introduction-row .intro {
-      font-size: 1.425rem;
+      font-size: 1.4rem;
       padding: 45px; } }
   @media (min-width: 1200px) {
     .introduction-container .introduction-row .intro {
       font-size: 1.625rem;
       padding: 60px; } }
   .introduction-container .introduction-row .intro .title {
-    color: #000;
+    color: #333;
+    font-size: 1.625rem;
+    margin: 0; }
+  .introduction-container .introduction-row .intro .introducing {
+    display: block;
+    font-family: Pacifico, Helvetica, Arial, sans-serif;
+    font-size: 1.375rem;
+    margin: 0 0 30px; }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .introduction-container .introduction-row .intro .introducing {
+        margin-bottom: 15px; } }
+    @media (min-width: 1200px) {
+      .introduction-container .introduction-row .intro .introducing {
+        font-size: 1.875rem;
+        margin-bottom: 45px; } }
+  .introduction-container .introduction-row .intro .company-name {
+    font-family: "Cantata One", Serif, Times, serif;
     font-weight: 700;
+    display: block;
     margin: 0 0 30px;
     text-transform: uppercase; }
     @media (min-width: 768px) and (max-width: 992px) {
-      .introduction-container .introduction-row .intro .title {
+      .introduction-container .introduction-row .intro .company-name {
         margin-bottom: 15px; } }
     @media (min-width: 1200px) {
-      .introduction-container .introduction-row .intro .title {
+      .introduction-container .introduction-row .intro .company-name {
+        font-size: 2rem;
         margin-bottom: 45px; } }
+    .introduction-container .introduction-row .intro .company-name .reg {
+      vertical-align: middle; }
   .introduction-container .introduction-row .intro p {
     margin: 0 0 30px; }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .introduction-container .introduction-row .intro p {
+        margin-bottom: 15px; } }
     @media (min-width: 1200px) {
       .introduction-container .introduction-row .intro p {
         margin-bottom: 45px; } }
