@@ -5465,8 +5465,7 @@ p + p {
       padding: 45px; } }
   @media (min-width: 1200px) {
     .introduction-container .introduction-row .intro {
-      font-size: 1.625rem;
-      padding: 60px; } }
+      font-size: 1.625rem; } }
   .introduction-container .introduction-row .intro .title {
     color: #333;
     font-size: 1.625rem;
@@ -5482,7 +5481,7 @@ p + p {
     @media (min-width: 1200px) {
       .introduction-container .introduction-row .intro .introducing {
         font-size: 1.875rem;
-        margin-bottom: 45px; } }
+        margin-bottom: 39px; } }
   .introduction-container .introduction-row .intro .company-name {
     font-family: "Cantata One", Serif, Times, serif;
     font-weight: 700;
@@ -5495,7 +5494,7 @@ p + p {
     @media (min-width: 1200px) {
       .introduction-container .introduction-row .intro .company-name {
         font-size: 2rem;
-        margin-bottom: 45px; } }
+        margin-bottom: 39px; } }
     .introduction-container .introduction-row .intro .company-name .reg {
       vertical-align: middle; }
   .introduction-container .introduction-row .intro p {
@@ -5505,7 +5504,7 @@ p + p {
         margin-bottom: 15px; } }
     @media (min-width: 1200px) {
       .introduction-container .introduction-row .intro p {
-        margin-bottom: 45px; } }
+        margin-bottom: 39px; } }
   .introduction-container .introduction-row .intro .arrow {
     background: url("../img/arrow.png") 0 0 no-repeat;
     bottom: -65px;
