@@ -5395,6 +5395,9 @@ p + p {
     display: table-cell;
     float: none;
     vertical-align: top; } }
+.reg {
+  vertical-align: sub; }
+
 /**
  * Header & Navigation
  */
@@ -5495,8 +5498,6 @@ p + p {
       .introduction-container .introduction-row .intro .company-name {
         font-size: 2rem;
         margin-bottom: 39px; } }
-    .introduction-container .introduction-row .intro .company-name .reg {
-      vertical-align: middle; }
   .introduction-container .introduction-row .intro p {
     margin: 0 0 30px; }
     @media (min-width: 768px) and (max-width: 992px) {
